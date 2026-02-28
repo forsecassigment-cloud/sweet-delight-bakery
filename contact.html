@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us - Sweet Delight Bakery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+body{
+    background:#dfe7dc;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Offer */
+.top-offer{
+    text-align:center;
+    padding:8px;
+    font-size:18px;
+}
+
+/* Navbar */
+.navbar{
+    border-top: 2px solid #e7a8a1;
+    border-bottom: 2px solid #e7a8a1;
+}
+.nav-link{
+    color: #e7a8a1 !important;
+    font-size: 18px;
+}
+.logo-box{
+    background:#e7a8a1;
+    padding:12px 35px;
+}
+.logo-text{
+    font-family:'Great Vibes', cursive;
+    font-size:24px;
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+}
+
+/* Page Title */
+.page-title{
+    text-align:center;
+    padding:50px 0 20px;
+}
+.page-title h2{
+    color:#b8860b;
+}
+
+/* Form Section */
+.contact-section{
+    padding:40px 0 80px;
+}
+
+.form-control{
+    border-radius:4px;
+}
+
+.submit-btn{
+    background:#e7a8a1;
+    border:none;
+    padding:8px 25px;
+    border-radius:25px;
+}
+.submit-btn:hover{
+    background:#d88c84;
+}
+
+.reset-btn{
+    background:#b5c4bb;
+    border:none;
+    padding:8px 25px;
+    border-radius:25px;
+}
+
+/* Right Side Info */
+.contact-info{
+    border-left:2px solid #caa85c;
+    padding-left:40px;
+}
+
+.contact-info h6{
+    color:#b8860b;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- OFFER BAR -->
+<div class="top-offer">
+Upto Rs. 200 OFF on the First Order. T&C apply.
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container">
+
+    <div class="logo-box">
+      <a class="logo-text" href="index.html">Sweet Delight Bakery</a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+      <ul class="navbar-nav align-items-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                style="color: #a64939"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Products
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" style="color: #a64939" href="#"
+                    >Cakes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" style="color: #a64939" href="#"
+                    >Pastries</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" style="color: #a64939" href="#"
+                    >Cookies</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+        <!-- Search -->
+        <li class="nav-item ms-3">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success" type="submit">Go</button>
+          </form>
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- PAGE TITLE -->
+<div class="page-title">
+<h2>Contact Us</h2>
+<p>We would love to hear from you. Share your thoughts and queries with us!</p>
+</div>
+
+<!-- CONTACT SECTION -->
+<div class="container contact-section">
+<div class="row">
+
+<!-- LEFT FORM -->
+<div class="col-md-6">
+
+<form>
+  <div class="mb-3">
+    <label>First Name *</label>
+    <input type="text" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label>Last Name *</label>
+    <input type="text" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label>Mobile *</label>
+    <input type="tel" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label>Email *</label>
+    <input type="email" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label>Requirement Date & Time</label>
+    <input type="datetime-local" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <label>City *</label>
+    <input type="text" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label>Zip Code *</label>
+    <input type="text" class="form-control" required>
+  </div>
+
+  <button type="submit" class="submit-btn">SUBMIT</button>
+  <button type="reset" class="reset-btn">RESET</button>
+</form>
+
+</div>
+
+<!-- RIGHT INFO -->
+<div class="col-md-6 contact-info">
+
+<h6>Sweet Delight Bakery Pvt. Ltd.</h6>
+
+<p>
+Registered Address:<br>
+32/33 A, Demo Village Road,<br>
+Mumbai - 400088,<br>
+Maharashtra, India
+</p>
+
+<h6>Grievance & Nodal Officer:</h6>
+<p>Mr. Example Name<br>
+General Counsel & Company Secretary</p>
+
+<h6>Contact Details:</h6>
+<p>
+📞 +91 9324789587<br>
+✉ adilhasim95@gmail.com
+</p>
+
+</div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+    <footer class="text-center">
+      © 2026 Sweet Delight Bakery | All Rights Reserved
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
