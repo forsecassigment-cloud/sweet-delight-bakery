@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cake Details | Sweet Delight Bakery</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ================= BODY ================= */
+      body {
+        background-color: #f9f5f0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* ================= TOP OFFER TEXT ================= */
+      .top-offer {
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+      }
+
+      /* ================= LOGO ================= */
+      .logo-box {
+        background: #e7a8a1;
+        padding: 15px 40px;
+        display: inline-block;
+      }
+      .logo-text {
+        font-family: "Great Vibes", cursive;
+        font-size: 25px;
+        color: #f5f0e6;
+        text-decoration: none;
+      }
+
+      /* ================= NAVBAR ================= */
+      .navbar {
+        border-top: 2px solid #e7a8a1;
+        border-bottom: 2px solid #e7a8a1;
+      }
+      .nav-link {
+        color: #e7a8a1 !important;
+        font-size: 18px;
+      }
+      .nav-link:hover {
+        color: #000 !important;
+      }
+
+/* ================= PRODUCT SECTION ================= */
+.product-section{
+  padding:60px 0;
+}
+.product-card{
+  background:white;
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+.product-img{
+  width:100%;
+  border-radius:20px;
+  transition:0.4s;
+}
+.product-img:hover{
+  transform:scale(1.05);
+}
+
+.price{
+  font-size:24px;
+  font-weight:600;
+  color:#a64939;
+}
+
+.quantity-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.qty-btn{
+  background:#e7a8a1;
+  border:none;
+  color:white;
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  font-size:18px;
+}
+.qty-btn:hover{
+  background:#a64939;
+}
+
+.btn-cart{
+  background:#e7a8a1;
+  color:white;
+  border:none;
+  padding:10px 25px;
+  border-radius:25px;
+  transition:0.4s;
+}
+.btn-cart:hover{
+  background:#a64939;
+  transform:scale(1.05);
+}
+
+.rating{
+  color:#ffc107;
+  font-size:18px;
+}
+
+footer{
+  background:#5a3e36;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Top Offer -->
+    <div class="top-offer">Upto Rs. 200 OFF on the First Order. T&C apply.</div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <div class="logo-box">
+          <a class="navbar-brand logo-text" href="index.html"
+            >Sweet Delight Bakery</a
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="specialitycakes.html">Speciality Cakes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown position-static">
+  <a class="nav-link dropdown-toggle" 
+     href="#" 
+     role="button" 
+     data-bs-toggle="dropdown"
+     style="color:#a64939;">
+    Products
+  </a>
+
+  <div class="dropdown-menu w-100 p-4 shadow border-0">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Cake Item Template -->
+
+        <!-- 1 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Chocolate%20Mousse%20Cake&price=899&image=https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+class="text-decoration-none text-dark">
+  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+       class="img-fluid rounded mb-2"
+       style="height:100px; object-fit:cover;">
+  <p>Chocolate Mousse Cake</p>
+</a>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Red%20Velvet%20Cake&price=999&image=https://cakelinks.in/cdn/shop/products/HALFKGREDVELVET600.jpg?v=1678697908&width=1920"
+class="text-decoration-none text-dark">
+            <img src="https://cakelinks.in/cdn/shop/products/HALFKGREDVELVET600.jpg?v=1678697908&width=1920" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Red Velvet Cake</p>
+          </a>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Black%20Forest%20Cake&price=1099&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSLw8nDSQ2RdB1KaTKzD90TH6VybZkdi7iWyqj5ZqyYyqjCzdjtWkYW37iPYA9XEKRn_dwkUSKE08ksmxO5-C_Bo_3AtxemvQ"
+class="text-decoration-none text-dark">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSLw8nDSQ2RdB1KaTKzD90TH6VybZkdi7iWyqj5ZqyYyqjCzdjtWkYW37iPYA9XEKRn_dwkUSKE08ksmxO5-C_Bo_3AtxemvQ" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Black Forest Cake</p>
+          </a>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Oreo%20Chocolate%20Cake&price=1199&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSQ0rh9Ih6biBIKpoOJm8UTDs-VXO04f218wIfr8MxFCt-UApLJ_qI774jkaDBhHvb74v5vQ0od0mGyz88XM3t454JbxTC7"
+class="text-decoration-none text-dark">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSQ0rh9Ih6biBIKpoOJm8UTDs-VXO04f218wIfr8MxFCt-UApLJ_qI774jkaDBhHvb74v5vQ0od0mGyz88XM3t454JbxTC7" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Oreo Chocolate Cake</p>
+          </a>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Carrot%20Cream%20Cake&price=999&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQDr1zlcaJVVLd15mol7eLf4g9osC8sU8a088o53YQRfS0GWaCfo9uAUzTcM0J64PknTlIkWZe-3Zu5ZgB1Dlp2eMDCgxiC90orBuxPKNI"
+class="text-decoration-none text-dark">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQDr1zlcaJVVLd15mol7eLf4g9osC8sU8a088o53YQRfS0GWaCfo9uAUzTcM0J64PknTlIkWZe-3Zu5ZgB1Dlp2eMDCgxiC90orBuxPKNI" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Carrot Cream Cake</p>
+          </a>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Lemon%20Cheesecake&price=1299&image=https://www.urbanbakes.com/wp-content/uploads/2021/04/Lemon-Cheesecake-URBAN-BAKES-4.1.jpg"
+class="text-decoration-none text-dark">
+            <img src="https://www.urbanbakes.com/wp-content/uploads/2021/04/Lemon-Cheesecake-URBAN-BAKES-4.1.jpg" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Lemon Cheesecake</p>
+          </a>
+        </div>
+
+        <div class="col-md-2 col-6 text-center">
+          <a href="products.html" class="text-decoration-none text-dark">
+            
+            <p>View All</p>
+          </a>
+        </div>
+
+            <!-- Search -->
+            <li class="nav-item ms-3">
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Go
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+<!-- PRODUCT SECTION -->
+<div class="container product-section">
+<div class="row product-card align-items-center">
+
+<div class="col-md-6">
+<img id="cakeImage" class="product-img">
+</div>
+
+<div class="col-md-6">
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="specialitycakes.html">Speciality Cakes</a></li>
+    <li class="breadcrumb-item active" id="cakeName"></li>
+  </ol>
+</nav>
+
+<h2 id="cakeName2"></h2>
+
+<div class="rating mb-2">
+★★★★★ (4.8 Rating)
+</div>
+
+<p class="price">
+₹ <span id="cakePrice"></span>
+</p>
+
+<p>
+Freshly baked with premium ingredients, soft sponge layers, and rich creamy frosting. Perfect for birthdays, anniversaries, and celebrations.
+</p>
+
+<!-- Quantity size -->
+<div class="mt-4">
+<label class="form-label">Choose Size</label>
+<select class="form-select mb-3">
+<option>1 Kg</option>
+<option>1.5 Kg</option>
+<option>2 Kg</option>
+<option>2.5 Kg</option>
+<option>3 Kg</option>
+</select>
+</div>
+
+<p class="fw-bold">
+Total: ₹ <span id="totalPrice"></span>
+</p>
+<button class="btn btn-cart mt-3">Order Now</button>
+<button class="btn btn-cart mt-3">Add to Cart</button>
+
+</div>
+</div>
+</div>
+
+<footer>
+© 2026 Sweet Delight Bakery | Made with ❤️
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+// Get data from URL
+const params = new URLSearchParams(window.location.search);
+const name = params.get("name");
+const price = parseInt(params.get("price"));
+const image = params.get("image");
+
+document.getElementById("cakeName").innerText = name;
+document.getElementById("cakeName2").innerText = name;
+document.getElementById("cakePrice").innerText = price;
+document.getElementById("cakeImage").src = image;
+document.getElementById("totalPrice").innerText = price;
+
+// Quantity change
+function changeQty(amount){
+  let qty = parseInt(document.getElementById("quantity").value);
+  qty += amount;
+  if(qty < 1) qty = 1;
+  document.getElementById("quantity").value = qty;
+  document.getElementById("totalPrice").innerText = qty * price;
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speciality Cakes | Sweet Delight</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ================= BODY ================= */
+      body {
+        background-color: #f9f5f0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* ================= TOP OFFER TEXT ================= */
+      .top-offer {
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+      }
+
+      /* ================= LOGO ================= */
+      .logo-box {
+        background: #e7a8a1;
+        padding: 15px 40px;
+        display: inline-block;
+      }
+      .logo-text {
+        font-family: "Great Vibes", cursive;
+        font-size: 25px;
+        color: #f5f0e6;
+        text-decoration: none;
+      }
+
+      /* ================= NAVBAR ================= */
+      .navbar {
+        border-top: 2px solid #e7a8a1;
+        border-bottom: 2px solid #e7a8a1;
+      }
+      .nav-link {
+        color: #e7a8a1 !important;
+        font-size: 18px;
+      }
+      .nav-link:hover {
+        color: #000 !important;
+      }
+
+      /* ================= HERO ================= */
+      .hero {
+        background: #cde5df;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      .hero h1 {
+        color: #9b6b2f;
+        font-weight: 700;
+      }
+      .hero p {
+        max-width: 700px;
+        margin: auto;
+      }
+
+      /* Cards */
+      .cake-card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: 0.4s;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+      .cake-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      }
+      .cake-card img {
+        height: 260px;
+        object-fit: cover;
+      }
+      .price {
+        color: #d63384;
+        font-weight: 600;
+      }
+      .btn-order {
+        background: #f8c8c8;
+        border: none;
+      }
+      .btn-order:hover {
+        background: #e89cae;
+      }
+      footer {
+        background: #5a3e36;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      /* Image Zoom Effect */
+      .cake-card img {
+        height: 260px;
+        object-fit: cover;
+        transition: 0.5s;
+      }
+      .cake-card:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Price */
+      .price {
+        color: #d63384;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      /* Animated Button */
+      .btn-order {
+        background: #e7a8a1;
+        border: none;
+        color: white;
+        padding: 8px 18px;
+        border-radius: 25px;
+        transition: 0.4s;
+      }
+      .btn-order:hover {
+        background: #a64939;
+        transform: scale(1.1);
+      }
+
+      /* Scroll Animation */
+      .hidden {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.6s ease;
+      }
+      .show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Footer */
+      footer {
+        background: #5a3e36;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Offer -->
+    <div class="top-offer">Upto Rs. 200 OFF on the First Order. T&C apply.</div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <div class="logo-box">
+          <a class="navbar-brand logo-text" href="index.html"
+            >Sweet Delight Bakery</a
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="specialitycakes.html"
+                >Speciality Cakes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown position-static">
+  <a class="nav-link dropdown-toggle" 
+     href="#" 
+     role="button" 
+     data-bs-toggle="dropdown"
+     style="color:#a64939;">
+    Products
+  </a>
+
+  <div class="dropdown-menu w-100 p-4 shadow border-0">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Cake Item Template -->
+
+        <!-- 1 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Chocolate%20Mousse%20Cake&price=899&image=https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+class="text-decoration-none text-dark">
+  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+       class="img-fluid rounded mb-2"
+       style="height:100px; object-fit:cover;">
+  <p>Chocolate Mousse Cake</p>
+</a>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Red%20Velvet%20Cake&price=999&image=https://cakelinks.in/cdn/shop/products/HALFKGREDVELVET600.jpg?v=1678697908&width=1920"
+class="text-decoration-none text-dark">
+            <img src="https://cakelinks.in/cdn/shop/products/HALFKGREDVELVET600.jpg?v=1678697908&width=1920" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Red Velvet Cake</p>
+          </a>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Black%20Forest%20Cake&price=1099&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSLw8nDSQ2RdB1KaTKzD90TH6VybZkdi7iWyqj5ZqyYyqjCzdjtWkYW37iPYA9XEKRn_dwkUSKE08ksmxO5-C_Bo_3AtxemvQ"
+class="text-decoration-none text-dark">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSLw8nDSQ2RdB1KaTKzD90TH6VybZkdi7iWyqj5ZqyYyqjCzdjtWkYW37iPYA9XEKRn_dwkUSKE08ksmxO5-C_Bo_3AtxemvQ" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Black Forest Cake</p>
+          </a>
+        </div>
+
+        <!-- 4 -->
+       <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Oreo%20Chocolate%20Cake&price=1199&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSQ0rh9Ih6biBIKpoOJm8UTDs-VXO04f218wIfr8MxFCt-UApLJ_qI774jkaDBhHvb74v5vQ0od0mGyz88XM3t454JbxTC7"
+class="text-decoration-none text-dark">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSQ0rh9Ih6biBIKpoOJm8UTDs-VXO04f218wIfr8MxFCt-UApLJ_qI774jkaDBhHvb74v5vQ0od0mGyz88XM3t454JbxTC7" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Oreo Chocolate Cake</p>
+          </a>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Carrot%20Cream%20Cake&price=999&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQDr1zlcaJVVLd15mol7eLf4g9osC8sU8a088o53YQRfS0GWaCfo9uAUzTcM0J64PknTlIkWZe-3Zu5ZgB1Dlp2eMDCgxiC90orBuxPKNI"
+class="text-decoration-none text-dark">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQDr1zlcaJVVLd15mol7eLf4g9osC8sU8a088o53YQRfS0GWaCfo9uAUzTcM0J64PknTlIkWZe-3Zu5ZgB1Dlp2eMDCgxiC90orBuxPKNI" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Carrot Cream Cake</p>
+          </a>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Lemon%20Cheesecake&price=1299&image=https://www.urbanbakes.com/wp-content/uploads/2021/04/Lemon-Cheesecake-URBAN-BAKES-4.1.jpg"
+class="text-decoration-none text-dark">
+            <img src="https://www.urbanbakes.com/wp-content/uploads/2021/04/Lemon-Cheesecake-URBAN-BAKES-4.1.jpg" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Lemon Cheesecake</p>
+          </a>
+        </div>
+
+        <div class="col-md-2 col-6 text-center">
+          <a href="products.html" class="text-decoration-none text-dark">
+            
+            <p>View All</p>
+          </a>
+        </div>
+
+            <!-- Search -->
+            <li class="nav-item ms-3">
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Go
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <section class="hero">
+      <h1 class="animate__animated animate__fadeInDown">
+        Our Speciality Cakes ❤️
+      </h1>
+      <p class="animate__animated animate__fadeInUp">
+        A specially curated range of signature Sweet Delight cakes with unique
+        flavours and original homestyle recipes. The classics are here to make
+        your special moments more joyous!
+      </p>
+    </section>
+
+    <!-- Cakes -->
+    <div class="container py-5">
+      <div class="row g-4">
+        <!-- 1 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Chocolate Mousse Cake</h5>
+              <p class="price">₹899</p>
+              <a
+                href="product.html?name=Chocolate%20Mousse%20Cake&price=899&image=https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQDr1zlcaJVVLd15mol7eLf4g9osC8sU8a088o53YQRfS0GWaCfo9uAUzTcM0J64PknTlIkWZe-3Zu5ZgB1Dlp2eMDCgxiC90orBuxPKNI"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Carrot Cream Cake</h5>
+              <p class="price">₹749</p>
+              <a
+                href="product.html?name=Carrot%20Cream%20Cake&price=749&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQDr1zlcaJVVLd15mol7eLf4g9osC8sU8a088o53YQRfS0GWaCfo9uAUzTcM0J64PknTlIkWZe-3Zu5ZgB1Dlp2eMDCgxiC90orBuxPKNI"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSQ0rh9Ih6biBIKpoOJm8UTDs-VXO04f218wIfr8MxFCt-UApLJ_qI774jkaDBhHvb74v5vQ0od0mGyz88XM3t454JbxTC7"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Oreo Chocolate Cake</h5>
+              <p class="price">₹999</p>
+              <a
+                href="product.html?name=Oreo%20Chocolate%20Cake&price=999&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSQ0rh9Ih6biBIKpoOJm8UTDs-VXO04f218wIfr8MxFCt-UApLJ_qI774jkaDBhHvb74v5vQ0od0mGyz88XM3t454JbxTC7"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://theobroma.in/cdn/shop/files/TiramisuCake1Large.jpg?v=1702989909"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Tiramisu Cake</h5>
+              <p class="price">₹1099</p>
+              <a
+                href="product.html?name=Tiramisu%20Cake&price=1099&image=https://theobroma.in/cdn/shop/files/TiramisuCake1Large.jpg?v=1702989909"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://images.unsplash.com/photo-1562440499-64c9a111f713"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Opera Cake</h5>
+              <p class="price">₹1199</p>
+               <a
+                href="product.html?name=Opera%20Cake&price=1199&image=https://images.unsplash.com/photo-1562440499-64c9a111f713"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTFL1Y75ETqUglzUx_EH94B7B5YfT5kwzceqXd68iqjbPrWHtHwunAzd0HxyUl8_5pj6lHS_ieff0ZHJKeWiST0ALtNRM1x"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Truffle Delight Cake</h5>
+              <p class="price">₹899</p>
+               <a
+                href="product.html?name=Truffle%20Delight%20Cake&price=899&image=https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTFL1Y75ETqUglzUx_EH94B7B5YfT5kwzceqXd68iqjbPrWHtHwunAzd0HxyUl8_5pj6lHS_ieff0ZHJKeWiST0ALtNRM1x"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://cakelinks.in/cdn/shop/products/HALFKGREDVELVET600.jpg?v=1678697908&width=1920"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Red Velvet Cake</h5>
+              <p class="price">₹999</p>
+               <a
+                href="product.html?name=Red%20Velvet%20Cake&price=999&image=https://cakelinks.in/cdn/shop/products/HALFKGREDVELVET600.jpg?v=1678697908&width=1920"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSLw8nDSQ2RdB1KaTKzD90TH6VybZkdi7iWyqj5ZqyYyqjCzdjtWkYW37iPYA9XEKRn_dwkUSKE08ksmxO5-C_Bo_3AtxemvQ"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Black Forest Cake</h5>
+              <p class="price">₹849</p>
+               <a
+                href="product.html?name=Black%20Forest%20Cake&price=849&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSLw8nDSQ2RdB1KaTKzD90TH6VybZkdi7iWyqj5ZqyYyqjCzdjtWkYW37iPYA9XEKRn_dwkUSKE08ksmxO5-C_Bo_3AtxemvQ"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSkNP9bPmL7ZGDmbUqmmXy2m8_rorC1LxsBFxUXY7qJNoW8snbM18aiftZXZn9HyyKuMxeedUId0vesGKmWPAYxNYf9PDBn1YVY3XJxzQE"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Butterscotch Cake</h5>
+              <p class="price">₹799</p>
+               <a
+                href="product.html?name=Butterscotch%20Cake&price=799&image=https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSkNP9bPmL7ZGDmbUqmmXy2m8_rorC1LxsBFxUXY7qJNoW8snbM18aiftZXZn9HyyKuMxeedUId0vesGKmWPAYxNYf9PDBn1YVY3XJxzQE"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://www.peanutblossom.com/wp-content/uploads/2011/09/almondcrunchcake-11-2.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Almond Crunch Cake</h5>
+              <p class="price">₹949</p>
+               <a
+                href="product.html?name=Almond%20Crunch%20Cake&price=949&image=https://www.peanutblossom.com/wp-content/uploads/2011/09/almondcrunchcake-11-2.jpg"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://www.urbanbakes.com/wp-content/uploads/2021/04/Lemon-Cheesecake-URBAN-BAKES-4.1.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Lemon Cheesecake</h5>
+              <p class="price">₹899</p>
+               <a
+                href="product.html?name=Lemon%20Cheesecake&price=899&image=https://www.urbanbakes.com/wp-content/uploads/2021/04/Lemon-Cheesecake-URBAN-BAKES-4.1.jpg"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="col-md-4">
+          <div class="card cake-card animate__animated animate__zoomIn">
+            <img
+              src="https://theobroma.in/cdn/shop/files/DenseLoafTruffleCake2Large.jpg?v=1702989712"
+              class="card-img-top"
+            />
+            <div class="card-body text-center">
+              <h5>Dense Truffle Cake</h5>
+              <p class="price">₹1099</p>
+               <a
+                href="product.html?name=Dense%20Truffle%20Cake&price=1099&image=https://theobroma.in/cdn/shop/files/DenseLoafTruffleCake2Large.jpg?v=1702989712"
+                class="btn btn-order"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2026 Sweet Delight Bakery | Made with ❤️</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

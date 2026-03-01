@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Delight Bakery</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ================= BODY ================= */
+      body {
+        background-color: #f9f5f0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* ================= TOP OFFER TEXT ================= */
+      .top-offer {
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+      }
+
+      /* ================= LOGO ================= */
+      .logo-box {
+        background: #e7a8a1;
+        padding: 15px 40px;
+        display: inline-block;
+      }
+      .logo-text {
+        font-family: "Great Vibes", cursive;
+        font-size: 25px;
+        color: #f5f0e6;
+        text-decoration: none;
+      }
+
+      /* ================= NAVBAR ================= */
+      .navbar {
+        border-top: 2px solid #e7a8a1;
+        border-bottom: 2px solid #e7a8a1;
+      }
+      .nav-link {
+        color: #e7a8a1 !important;
+        font-size: 18px;
+      }
+      .nav-link:hover {
+        color: #000 !important;
+      }
+      .dropdown-menu {
+        max-height: 500px;
+        overflow-y: auto;
+      }
+
+      .dropdown-menu img {
+        transition: 0.3s;
+      }
+
+      .dropdown-menu img:hover {
+        transform: scale(1.1);
+      }
+
+      /* ================= ABOUT SECTION ================= */
+      .about-section {
+        padding: 60px 20px;
+        text-align: center;
+      }
+      .about-title {
+        font-size: 32px;
+        color: #a67c00;
+        font-weight: bold;
+      }
+      .about-desc {
+        max-width: 600px;
+        margin: 15px auto 40px;
+        color: #555;
+      }
+      .content-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+      .side-box {
+        width: 280px;
+      }
+      .side-box h5 {
+        color: #a67c00;
+        font-weight: bold;
+      }
+      .side-box p {
+        color: #666;
+        font-size: 14px;
+      }
+      .custom-btn {
+        margin-top: 40px;
+        padding: 10px 30px;
+        border: 2px solid #a67c00;
+        background-color: transparent;
+        color: #a67c00;
+        border-radius: 30px;
+        transition: 0.3s;
+      }
+      .custom-btn:hover {
+        background-color: #a67c00;
+        color: white;
+      }
+
+      
+      /* ================= FOOTER ================= */
+      footer {
+        background: #111;
+        color: white;
+        padding: 15px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Top Offer -->
+    <div class="top-offer">Upto Rs. 200 OFF on the First Order. T&C apply.</div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <div class="logo-box">
+          <a class="navbar-brand logo-text" href="index.html"
+            >Sweet Delight Bakery</a
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="specialitycakes.html"
+                >Speciality Cakes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown position-static">
+  <a class="nav-link dropdown-toggle" 
+     href="#" 
+     role="button" 
+     data-bs-toggle="dropdown"
+     style="color:#a64939;">
+    Products
+  </a>
+
+  <div class="dropdown-menu w-100 p-4 shadow border-0">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Cake Item Template -->
+
+        <!-- 1 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Chocolate%20Mousse%20Cake&price=899&image=https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+class="text-decoration-none text-dark">
+  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+       class="img-fluid rounded mb-2"
+       style="height:100px; object-fit:cover;">
+  <p>Chocolate Mousse Cake</p>
+</a>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Red%20Velvet%20Cake&price=999&image=https://cakelinks.in/cdn/shop/products/HALFKGREDVELVET600.jpg?v=1678697908&width=1920"
+class="text-decoration-none text-dark">
+            <img src="https://cakelinks.in/cdn/shop/products/HALFKGREDVELVET600.jpg?v=1678697908&width=1920" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Red Velvet Cake</p>
+          </a>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Black%20Forest%20Cake&price=1099&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSLw8nDSQ2RdB1KaTKzD90TH6VybZkdi7iWyqj5ZqyYyqjCzdjtWkYW37iPYA9XEKRn_dwkUSKE08ksmxO5-C_Bo_3AtxemvQ"
+class="text-decoration-none text-dark">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSLw8nDSQ2RdB1KaTKzD90TH6VybZkdi7iWyqj5ZqyYyqjCzdjtWkYW37iPYA9XEKRn_dwkUSKE08ksmxO5-C_Bo_3AtxemvQ" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Black Forest Cake</p>
+          </a>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Oreo%20Chocolate%20Cake&price=1199&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSQ0rh9Ih6biBIKpoOJm8UTDs-VXO04f218wIfr8MxFCt-UApLJ_qI774jkaDBhHvb74v5vQ0od0mGyz88XM3t454JbxTC7"
+class="text-decoration-none text-dark">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSQ0rh9Ih6biBIKpoOJm8UTDs-VXO04f218wIfr8MxFCt-UApLJ_qI774jkaDBhHvb74v5vQ0od0mGyz88XM3t454JbxTC7" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Oreo Chocolate Cake</p>
+          </a>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Carrot%20Cream%20Cake&price=999&image=https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQDr1zlcaJVVLd15mol7eLf4g9osC8sU8a088o53YQRfS0GWaCfo9uAUzTcM0J64PknTlIkWZe-3Zu5ZgB1Dlp2eMDCgxiC90orBuxPKNI"
+class="text-decoration-none text-dark">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQDr1zlcaJVVLd15mol7eLf4g9osC8sU8a088o53YQRfS0GWaCfo9uAUzTcM0J64PknTlIkWZe-3Zu5ZgB1Dlp2eMDCgxiC90orBuxPKNI" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Carrot Cream Cake</p>
+          </a>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-md-2 col-6 text-center">
+          <a href="product.html?name=Lemon%20Cheesecake&price=1299&image=https://www.urbanbakes.com/wp-content/uploads/2021/04/Lemon-Cheesecake-URBAN-BAKES-4.1.jpg"
+class="text-decoration-none text-dark">
+            <img src="https://www.urbanbakes.com/wp-content/uploads/2021/04/Lemon-Cheesecake-URBAN-BAKES-4.1.jpg" 
+                 class="img-fluid rounded mb-2" style="height:100px; object-fit:cover;">
+            <p>Lemon Cheesecake</p>
+          </a>
+        </div>
+
+        <div class="col-md-2 col-6 text-center">
+          <a href="products.html" class="text-decoration-none text-dark">
+            
+            <p>View All</p>
+          </a>
+        </div>
+        
+
+        <!-- Continue same pattern up to 30 -->
+
+            <!-- Search -->
+            <li class="nav-item ms-3">
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Go
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- OFFER ALERT -->
+    <div
+      class="alert alert-warning alert-dismissible fade show text-center"
+      role="alert"
+    >
+      <strong>Special Offer!</strong> Ramadan Special Cakes Available Now!
+      <a
+        href="ramadan.html"
+        class="btn btn-sm ms-3"
+        style="
+          background: linear-gradient(90deg, #702f5f, #2d8e52);
+          color: white;
+          border-radius: 50px;
+        "
+        >Explore</a
+      >
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <!-- CAROUSEL -->
+    <div
+      id="heroCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+      data-bs-pause="false"
+    >
+      <!-- Indicators (Dots) -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <a href="products.html">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0521/3929/4884/files/website_desktop_chocolate_banner.jpg?v=1771997823"
+              class="d-block w-100 hero-img"
+            />
+          </a>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <a href="ramadan.html">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0521/3929/4884/files/Ramadan-Range-Website_5b9f9586-1020-4404-a23b-27c68a769e19.jpg?v=1771652380"
+              class="d-block w-100 hero-img"
+            />
+          </a>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <a href="offers.html">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0521/3929/4884/files/Website-desktop-banner_Horizontal.jpg?v=1771261518"
+              class="d-block w-100 hero-img"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- MAIN SECTION -->
+    <div class="container mt-5 text-center">
+      <h1 style="color: #e7a8a1">Welcome to Sweet Delight Bakery</h1>
+      <hr class="w-25 mx-auto border-3 text-danger" />
+      <p>
+        We bring sweetness to your special moments with freshly baked cakes and
+        premium desserts made with love.
+      </p>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section">
+      <h2 class="about-title">Food of The Gods, Freshly Baked!</h2>
+
+      <p class="about-desc">
+        Since 2019, we've been serving guests the best quality treats,
+        traditionally made and presented with care.
+      </p>
+
+      <div class="content-wrapper">
+        <div class="side-box text-end">
+          <h5>AUTHENTIC RECIPES</h5>
+          <p>Traditional home-style recipes using fresh ingredients.</p>
+          <h5 class="mt-4">BAKED WITH LOVE</h5>
+          <p>Every recipe is crafted with passion and care.</p>
+        </div>
+
+        <div>
+          <img
+            src="https://theobroma.in/cdn/shop/files/theo-home_03c4e3a4-9dc9-4de7-9464-16e655a238ed_2.jpg?v=1630652883"
+            class="img-fluid"
+            width="500"
+          />
+        </div>
+
+        <div class="side-box text-start">
+          <h5>COMMITTED TO QUALITY</h5>
+          <p>We prioritize quality in ingredients and service.</p>
+          <h5 class="mt-4">HONESTLY PRICED</h5>
+          <p>Best products at fair prices.</p>
+        </div>
+      </div>
+
+      <button
+        class="custom-btn"
+        onclick="window.location.href = 'about us.html'"
+      >
+        KNOW MORE
+      </button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+      © 2026 Sweet Delight Bakery | All Rights Reserved
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
